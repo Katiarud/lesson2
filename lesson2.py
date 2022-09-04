@@ -1,4 +1,3 @@
-kvjhgdjg
 per1 = 17
 per2 = 320
 per3 = 32.23
