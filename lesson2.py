@@ -1,19 +1,14 @@
 kvjhgdjg
-a=17 # int
-print(a)
-b=320 # int
-print(b)
-c=32.2 3 # floot
-print(c)
-d=574.12 # flootoat
-print(d)
-e="Paty" # str
-print(e)
-f="open" # srt
-print(f)
-g=True # bool
-print(g)
-h=False # bool
-print(h)
-j=None # пустое значение
-print(j)
+per1 = 17
+per2 = 320
+per3 = 32.23
+per4 = 74.12
+per5 = "Paty"
+per6 = "open"
+per7 = True
+pen8 = True
+pen9 = False
+pen10 = False
+pen11 = None
+pen12 = None
+print(per1,per2,per3,per4,per5,per6,per7,per8,per9,per10,per11,per12)
