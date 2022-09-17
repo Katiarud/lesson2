@@ -1,21 +1,12 @@
-print(1**100)
-print(2**16)
-print(2-1000)
-print(2+2*2)
-print(60/3)
-import math
-print(math.sqrt(144))
-namber = 2+5*14
-x = int(namber)
-print(x)
-namber1 = int(x)
-namber1 = 66-11
-print(namber1)
-namber2 = 16-8
-print(namber2)
-namber2 **= 2
-print(namber2)
-def my_function(x1):66-x1
+str1 = "Pastel"
+print(str1[:]) # all
+print(str1[1:6:2]) # четные
+print(str1[::2]) # нечетные
+print(str1[::-1]) # все начиная с 6
+print(str1[5:0:-1]) # все в обратном порядке
+print(str1[0:5]) # все не доходя до 6
+print(str1[-1:-4:-1]) # все от последнего до 3
+
 
 
 
