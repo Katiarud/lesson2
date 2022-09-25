@@ -1,14 +1,27 @@
-age = int(input("введите саой возраст n"))
-age1 = 1
-age2 = 4
-age3 = 99
-if age == age1:
-    print("мне", age,"год")
-elif age <= age2:
-    print("мне",age,"года")
-elif age <= age3:
-    print("мне",age,"лет")
-else:
-    print("ввели не верно")
+try:
+    data5 = int(input("введите год вашего рождения "))
+    data6 = int(input("введите какой сейсас год  "))
+    c = int(data6 - data5)
+    data3 = int(input("введите месяц вашего рождения "))
+    data4 = int(input("введите месяц сегоднешнего дня "))
+    b = int(data4 - data3)
+    c1 = c - 1
+    b1 = 12 + b
+    data1 = int(input("введите число дня вашего рождения "))
+    data2 = int(input("введите число сегоднешнего дня "))
+    a = int(data2 - data1)
+    a1 = 30 + a
+    if 0 <= a <= 31 and 0 <= b <= 12 :
+        print('ваш возраст сейчас', c, "лет",b, "месяцев", a, "дней")
+    elif 0 <= a <= 31 and b < 0 :
+        print('ваш возраст сейчас', c1, "лет", b1, "месяцев", a, "дней")
+    elif a < 0 and 0 <= b <= 12 :
+        print('ваш возраст сейчас', c, "лет", b, "месяцев", a1, "дней")
+    else :
+        print('ваш возраст сейчас', c1, "лет", b1, "месяцев", a1, "дней")
+except (ValueError,NameError):
+    print("введите только числа")
+
+
 
 
