@@ -1,20 +1,17 @@
-try :
-    man1 = input("введите год, номер месяца и день рождения первого человека")
-    man2 = input("введите год, номер месяца и день рождения второго человека")
-    if int(man1[0:4:1]) < int(man2[0:4:1]):
-        print("первый старше второго")
-    elif int(man1[0:4:1]) > int(man2[0:4:1]):
-        print("второй старше первого")
-    elif int(man1[0:4:1]) == int(man2[0:4:1]) and int(man1[4:6:1]) > int(man2[4:6:1]):
-        print("второй старше первого")
-    elif int(man1[0:4:1]) == int(man2[0:4:1]) and int(man1[4:6:1]) < int(man2[4:6:1]):
-        print("первый старше второго")
-    elif int(man1[0:6:1]) == int(man2[0:6:1]) and int(man1[-2] + man1[-1]) > int(man2[-2] + man2[-1]):
-        print("второй старше первого")
-    else:
-        print("первый старше второго")
-except ValueError:
-    print("введите только числа начиная с года")
+chis = int(input("введите минимальное натуральное чисело: "))
+chis2 = int(input("введите максимальное натуральное чисело: "))
+i = int(input("введите шаг"))
+print(int((chis2 - chis) % i))  # количество шагов
+if chis > 0 and chis2 > chis:
+    a = str(chis + i)
+    b = str(chis + i*2)
+    c = str(chis + i*3)
+    d = str(chis + i*4)
+    e = str(chis + i*5)
+    f = str(chis + i*6)
+    print(a,b,c,d,e,f)
+else:
+   print("число введено не верно")
 
 
 
