@@ -1,25 +1,30 @@
-a = [1,2,5,66,44,3,8]
-for i in [1,2,5,66,44,3,8]:
-   if i % 2 == 0:
-       print(i)
+a = [2,0,48,27,36,-41,7,1]
+n = sum(a) / len(a)
+print(int(n))
+for i in a:
+    if i < n:
+        print(i)
 
-for i in range(1,11):#вывести диапазон 1-10, кроме 5
-    if i == 5:
-        continue
-    print(i)
+print('------------------')
 
-for i in range (10,20): #диапазон 10-20, прерывается на 15
-    if i == 15+1:
-        break
-    print(i)
-
-a = int(input('введите минимальный элемент '))
-b = int(input('введите максимальный элемент '))
+n = [1,5,-6,-9,7,8,2]
 summ = 0
-for i in range(a+1,b):
-    summ +=i
+for i in n:
+    if i >0 and i %2 == 0:
+        summ += i
 print(summ)
 
+               
+
+print('---------------')
+
+import random
+n = random.randint(1000000000,9999999999)
+print(n)
+summ = 0
+for i in str(n):
+    summ +=int(i)
+print(summ)
 
 
 
